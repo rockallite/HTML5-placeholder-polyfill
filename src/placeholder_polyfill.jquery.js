@@ -168,7 +168,7 @@
             showPlaceholderIfEmpty(input,o.options);
 
             // reformat on window resize and optional reformat on font resize - requires: http://www.tomdeater.com/jquery/onfontresize/
-            $(document).bind('fontresize resize', function(){
+            $(window).bind('fontresize resize', function(){
                 positionPlaceholder(placeholder,input);
             });
 
